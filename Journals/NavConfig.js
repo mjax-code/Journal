@@ -4,7 +4,17 @@ import NoteList from "./components/NoteList";
 import Note from "./components/Note";
 
 export const JournalApp = StackNavigator({
-  Home: { screen: JournalNames },
-  NoteList: { screen: NoteList},
+  Home: { 
+    screen: JournalNames,
+    navigationOptions: {
+      title: 'Knapsack'
+    }
+  },
+  NoteList: { 
+    screen: NoteList,
+    navigationOptions: {
+      title: 'test'
+    },
+  },
   //Note: { screen: Note},
 });
