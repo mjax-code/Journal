@@ -13,8 +13,13 @@ export const JournalApp = StackNavigator({
   NoteList: { 
     screen: NoteList,
     navigationOptions: {
-      title: 'test'
+      title: 'NoteList'
     },
   },
-  //Note: { screen: Note},
+  Note: {
+    screen: Note,
+    navigationOptions: {
+      title: 'Note'
+    }
+  },
 });

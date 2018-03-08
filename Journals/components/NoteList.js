@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { FlatList, Text, View, Button } from 'react-native';
-import styles from '../styleSheets/JournalNamesStyles';
+import styles from '../styleSheets/NoteListStyles';
 
 export default class NoteList extends Component {
   render() {
     return(
       <View>
-        <Text>Alex likes the ibtppw</Text>
+        <Text>Journal Name</Text>
+        <FlatList
+          data={}
+          renderItem={(item) => 
+            <Button/>
+          }
+        />
       </View>
     );
   }
