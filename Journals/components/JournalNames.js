@@ -12,11 +12,10 @@ export default class JournalNames extends Component {
         <FlatList
           data={dummyData}
           renderItem={({item}) => 
-          //<Text style={styles.item}>{item.key}</Text>
           <Button
             onPress={() => 
-              navigate("NoteList", {name : item.key})}
-            title={item.key}
+              navigate("NoteList", {name : item.journal})}
+            title={item.journal}
             color="blue"
           />
           }

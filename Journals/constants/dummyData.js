@@ -1,30 +1,34 @@
 export default [
-  {key: "Dreaming", 
+  {journal: "Dreaming", 
    pages:[{
      Title:"",
      Body:"",
      Date:""
-   }] 
+   }],
+   key:0 
   },
-  {key: "Planner",
+  {journal: "Planner",
    pages:[{
      Title:"",
      Body:"",
      Date:""
-   }] 
+   }],
+   key:1 
   },
-  {key: "React",
+  {journal: "React",
    pages:[{
      Title:"",
      Body:"",
      Date:""
-   }] 
+   }],
+   key:2 
   },
-  {key: "Journal",
+  {journal: "Journal",
    pages:[{
      Title:"",
      Body:"",
      Date:""
-   }] 
+   }],
+   key:3 
   },
 ];
