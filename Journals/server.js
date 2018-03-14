@@ -2,7 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-//import Notes from './NoteData';
+const JournalsRouter = require('./Routes/JournalRoutes');
 
 const server = express();
 server.use(helmet());
@@ -11,6 +11,8 @@ server.use(bodyParser.json());
 server.get('/', (req, res) => {
   res.status(200).json({ api: 'running...'});
 });
+
+server.use('/journals', JournalsRouter);
 
 //defaul port is 27017
 mongoose.connect('mongodb://localhost/knapsack').then(res => {
